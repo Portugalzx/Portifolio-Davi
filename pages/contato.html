@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contato ⁝ Davi Portugal</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Entre em contato">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header class="topo">
+        <div class="logo">
+            <a href="../index.html">Davi<span>Portugal</span></a>
+        </div>
+        <nav class="menu">
+            <a href="../index.html">Início</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="projetos.html">Projetos</a>
+            <a href="contato.html" class="ativo">Contato</a>
+        </nav>
+    </header>
+    
+    <section class="contato">
+        <div class="container">
+            <h2>Fale Comigo</h2>
+            
+            <div class="contato-content">
+                
+                <div class="formulario-wrapper">
+                    <h3>Envie uma Mensagem</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="nome">Nome *</label>
+                            <input type="text" required id="nome" placeholder="Seu nome">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">E-mail *</label>
+                            <input type="email" required id="email" placeholder="seu-email@example.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem *</label>
+                            <textarea rows="5" required id="mensagem" placeholder="Sua mensagem..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-enviar">Enviar</button>
+                    </form>
+
+                    <div id="formMessage" class="form-message"></div>
+                </div>
+
+                <div class="info-wrapper">
+                    <h3>Contato</h3>
+
+                    <div class="info-box">
+                        <h4>Email</h4>
+                        <p><a href="mailto:davi@exemplo.com">davi@exemplo.com</a></p>
+                    </div>
+
+                    <div class="info-box">
+                        <h4>Telefone</h4>
+                        <p><a href="tel:+5511999999999">(11) 99999-9999</a></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="rodape">
+        <p>® 2026 Davi Portugal. Todos os Direitos Reservados</p>
+        <p><a href="contato.html">Entre em Contato</a></p>
+    </footer>
+
+<script src="../js/script.js"></script>
+</body>
+</html>

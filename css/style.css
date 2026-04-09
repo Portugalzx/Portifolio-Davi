@@ -1,0 +1,156 @@
+/* === GERAL === */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+    background: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+main, section:not(.hero,.destaques,.sobre,.projetos,.contato) { flex: 1; }
+header, footer { flex-shrink: 0; }
+
+h1,h2,h3 { color: #2d5a8c; }
+p { margin: 10px 0; line-height: 1.5; }
+
+/* === HEADER === */
+header {
+    background: #2d5a8c;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.menu { display: flex; gap: 15px; }
+
+.logo a {
+    color: #fff;
+    text-decoration: none;
+    font: bold 24px Arial;
+}
+
+.logo span,
+nav.menu a:hover,
+nav.menu a.ativo { color: #00d4ff; }
+
+nav.menu a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* === HERO === */
+.hero { background: #f5f5f5; padding: 60px 20px; }
+
+.hero-content,
+.sobre-content {
+    display: flex;
+    gap: 40px;
+    max-width: 1200px;
+    margin: auto;
+    align-items: center;
+}
+
+.hero-text, .sobre-text { flex: 1; text-align: left; }
+.hero-image { flex: 1; }
+
+.hero img,
+.sobre-image img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+/* === BOTÕES === */
+.btn-primario, .btn-secundario {
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+    transition: .3s;
+}
+
+.btn-primario { background: #00d4ff; color: #fff; }
+.btn-secundario { border: 2px solid #2d5a8c; color: #2d5a8c; }
+
+.btn-primario:hover, .btn-secundario:hover { opacity: .8; }
+
+/* === GRID / CARDS === */
+.cards, .projetos-grid, .skills {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+}
+
+.card, .projeto, .skill, .info-box {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    transition: .3s;
+}
+
+.card, .projeto {
+    box-shadow: 0 2px 8px rgba(0,0,0,.1);
+}
+
+.card:hover, .projeto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,.15);
+}
+
+.skill, .info-box { border-left: 4px solid #00d4ff; }
+
+/* === CONTATO === */
+.contato-content {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.form-group { text-align: left; margin-bottom: 15px; }
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.btn-enviar {
+    background: #00d4ff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* === FOOTER === */
+footer {
+    background: #2d5a8c;
+    color: #fff;
+    padding: 20px;
+    margin-top: auto;
+}
+
+footer a { color: #00d4ff; }
+
+/* === RESPONSIVO === */
+@media (max-width: 768px) {
+    .topo, .hero-content, .sobre-content { flex-direction: column; }
+    .menu { flex-direction: column; }
+    .contato-content { grid-template-columns: 1fr; }
+}

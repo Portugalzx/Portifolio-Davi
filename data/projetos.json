@@ -1,0 +1,16 @@
+[
+  {
+    "nome": "Site Cafeteria",
+    "descricao": "Site responsivo de uma cafeteria.",
+    "tecnologia": "HTML, CSS, JS",
+    "imagem": "../img/cafe-central.jpg",
+    "github": "https://github.com/Portugalzx/portfolio"
+  },
+  {
+    "nome": "Dashboard",
+    "descricao": "Sistema com dados interativos.",
+    "tecnologia": "JavaScript",
+    "imagem": "../img/cardapio.jpg",
+    "github": "https://github.com/Portugalzx/portfolio"
+  }
+]
